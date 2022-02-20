@@ -5,7 +5,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public --no-clear",
+    "start": "sirv public --host $HOST --port $PORT",
     "lint": "eslint --ext js,md,svelte ./src",
     "heroku-postbuild": "npm run build"
   },
