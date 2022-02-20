@@ -22,8 +22,8 @@ let quote = {
 const env_variable = __api;
 
 const endpoint = env_variable.env.API_URL_QUOTES;
-const unsplashEndpint = env_variable.env.UNSPALSH_API_URL;
-const accessKey = env_variable.env.UNSPALSH_API_ACCESS_KEY;
+const unsplashEndpint = env_variable.env.UNSPLASH_API_URL;
+const accessKey = env_variable.env.UNSPLASH_API_ACCESS_KEY;
 
 onMount(async () => {
     quote.loading = true;
