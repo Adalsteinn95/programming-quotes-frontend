@@ -1,26 +1,23 @@
 <script>
 export let name;
 export let quote;
+export let imageSrc;
 </script>
 
-<div
-    class="min-w-screen min-h-screen bg-red-200 flex items-center justify-center px-5 py-5"
-    style="min-height: 100vh">
+<div class="min-h-screen bg-gray-200 flex justify-center items-center">
     <div
-        class="w-full mx-auto rounded-lg bg-white shadow-lg px-5 pt-5 pb-10 text-gray-800"
-        style="max-width: 500px">
-        <div class="w-full mb-10">
-            <div class="text-3xl text-blue-500 text-left leading-tight h-3">
-                “
+        class="max-w-2xl bg-white border-2 border-gray-300 p-5 rounded-md tracking-wide shadow-lg">
+        <div id="header" class="flex">
+            <img
+                alt="author images"
+                class="w-45 rounded-md border-2 border-gray-300"
+                src="{imageSrc}" />
+            <div id="body" class="flex flex-col ml-5">
+                <h4 id="name" class="text-xl font-semibold mb-2">{quote}</h4>
+                <div class="flex mt-5">
+                    <p class="ml-3">{name}</p>
+                </div>
             </div>
-            <p class="text-sm text-gray-600 text-center px-5">{quote}</p>
-            <div
-                class="text-3xl text-blue-500 text-right leading-tight h-3 -mt-3">
-                ”
-            </div>
-        </div>
-        <div class="w-full">
-            <p class="text-md text-blue-500 font-bold text-right">{name}</p>
         </div>
     </div>
 </div>
